@@ -12,8 +12,35 @@
     margin: 0 auto;
 }
 
+.bg-blue {
+    background-color: dodgerblue;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
 /* # generals*/
 
 body {
     background-color: #083B4C;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+li {
+    flex-basis: calc(100% /7);
+    list-style-type: none;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background-color: white;
 }
