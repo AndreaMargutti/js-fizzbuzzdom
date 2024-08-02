@@ -12,11 +12,16 @@
 //Creo variabile per il numero
 let number;
 
+//Recupero elemento nel DOM
+const numberTable = document.getElementById('number-table');
+console.log(numberTable);
+//Creazione variabile per lista
+let numberList = '<ul>';
+
 // # Fase di elaborazione dati
 //Generiamo i numeri da 1 a 100
 for(let i = 1; i < 101; i++){
     number = i;
-    console.log(number);
     
     //Assegnamo le stringe ai multipli
     if (i % 5 == 0 && i % 3 == 0){
@@ -28,5 +33,13 @@ for(let i = 1; i < 101; i++){
     } else if (i % 5 == 0) {
         number = 'Buzz';
         console.log(number);
+    } else {
+        console.log(i);
     }
+    //Inseriemento numero nella lista
+    numberList += `<li>${number}</li>`;
 }
+
+//Chiusura Lista
+numberList += '</ul>';
+numberTable.innerHTML = numberList;
