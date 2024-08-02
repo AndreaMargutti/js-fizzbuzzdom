@@ -8,9 +8,25 @@
 4. Stamparli in pagina
 */
 
+// # Fase di raccolta dati
+//Creo variabile per il numero
+let number;
+
 // # Fase di elaborazione dati
 //Generiamo i numeri da 1 a 100
 for(let i = 1; i < 101; i++){
-    console.log(i);
-
+    number = i;
+    console.log(number);
+    
+    //Assegnamo le stringe ai multipli
+    if (i % 5 == 0 && i % 3 == 0){
+        number = 'FizzBuzz';
+        console.log(number);
+    } else if (i % 3 == 0) {
+        number = 'Fizz';
+        console.log(number);
+    } else if (i % 5 == 0) {
+        number = 'Buzz';
+        console.log(number);
+    }
 }
